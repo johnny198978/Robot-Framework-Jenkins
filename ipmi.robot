@@ -11,9 +11,10 @@ Cases1-IPMI-SEL
 Cases2-IPMI-SDR
     IPMI    sdr
 IPMILibrary
+    [Tags]  Execute
     ipmicmd    ${ipmi}    ${host}    ${interface}    ${user}    ${passwd}    sel
 
-IPMILibrary-SDR
+IPMILibrary-SDR 
     ipmicmd    ${ipmi}    ${host}    ${interface}    ${user}    ${passwd}    sdr
 
 WebTest
