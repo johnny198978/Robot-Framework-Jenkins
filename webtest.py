@@ -28,7 +28,7 @@ class WebTest:
         pass
 
     def WebLoginFWupdate(self,ip):
-        driver = webdriver.Chrome(options=chrome_options)
+        driver = webdriver.Chrome(chrome_options=chrome_options)
         driver.get("https://"+str(ip)+"/cgi/url_redirect.cgi?url_name=mainmenu")
         time.sleep(1)
 
