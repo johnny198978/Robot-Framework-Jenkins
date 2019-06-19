@@ -18,6 +18,7 @@ IPMILibrary-SDR
     ipmicmd    ${ipmi}    ${host}    ${interface}    ${user}    ${passwd}    sdr
 
 WebTest
+    [Tags]  Execute
     WebLoginFWupdate   ${ip}
 
 *** Keywords ***
