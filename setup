@@ -1,0 +1,5 @@
+#!/bin/sh
+python -m robot --include Execute ipmi.robot
+exit 0
+ 
+ 
