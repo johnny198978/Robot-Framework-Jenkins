@@ -12,7 +12,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.options import Options
+#from selenium.webdriver.chrome.options import Options
 #from test.init import ip
 import time
 import commands
@@ -23,7 +23,7 @@ class WebTest:
         pass
 
     def WebLoginFWupdate(self,ip):
-        chrome_options = Options()
+        chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--headless")
         chrome_options.add_argument("--window-size=1024x768")
         #chrome_options.add_argument("--disable-dev-shm-usage")
