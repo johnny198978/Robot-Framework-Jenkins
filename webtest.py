@@ -24,12 +24,12 @@ class WebTest:
 
     def WebLoginFWupdate(self,ip):
         chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument("--headless")
+        chrome_options.add_argument('--headless')
         chrome_options.add_argument("--window-size=1024x768")
-        #chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument('--disable-gpu')
-        chrome_options.binary_location = '/usr/bin/google-chrome-stable'
+        chrome_options.binary_location = '/usr/bin/chromedriver'
         #chrome_options.set_headless()
         driver = webdriver.Chrome(chrome_options=chrome_options)
         driver.get("https://"+str(ip)+"/cgi/url_redirect.cgi?url_name=mainmenu")
